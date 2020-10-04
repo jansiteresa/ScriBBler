@@ -21,8 +21,8 @@
                 <p class="subtitle">Explore, Imagine, Create</p>
             </div>
             <div class="buttonsContainer">
-                <button id="button">Sign Up</button>
-                <button id="button">Sign In</button>
+                <button id="button"  onclick="showSignUpModal()" type="button">Sign Up</button>
+                <button id="button" onclick="showSignInModal()" type="button">Sign In</button>
             </div>
         </div>
         <div class="PostButtons">
@@ -30,6 +30,57 @@
             <button id="postBtn">Create Post</button>
         </div>
     </div>
+
+    <div>
+        <div class="modal" id="signInModal">
+          <div class="modalContent">
+  
+          <div class="modalHead">
+            <span onclick="hideSignInModal()" id="close" class="close" <i class="fa fa-times" aria-hidden="true"></i>
+                >&times;</span>
+            <h2 class="modalTitle">Welcome Back!</h2>
+          </div>
+          <hr>
+          <form>
+            <label for="username" class="labelText">Username</label>
+            <input type="text" class="username" placeholder="Enter your Username" required>
+            <label for="password" class="labelText">Password</label>
+            <input type="password" class="password" placeholder="Enter your Password" required>
+            <button type="submit" class="signin-btn">Sign In</button>
+          </form>
+  
+          <p class= footer>Not a member?<span onclick="hideSignInModal();showSignUpModal()" class=signup>Sign Up</span></p>
+        </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="modal" id="signUpModal">
+          <div class="modalContent">
+  
+          <div class="modalHead">
+            <span onclick="hideSignUpModal()" id="close" class="close">&times;</span>
+            <h2 class="modal-title">Get Started</h2>
+          </div>
+          <hr>
+          <form>
+            <label for="name" class="labelText">Name</label>
+            <input type="text" id="name" placeholder="Enter your Name" required>
+            <label for="username" class="labelText">Username</label>
+            <input type="text" class="username" placeholder="Enter your Username" required>
+            <label for="password" class="labelText">Password</label>
+            <input type="password" class="password" placeholder="Enter your Password" required>
+            <label for="confirmpassword" class="labelText"> Confirm Password</label>
+            <input type="password" id="confirmPassword" placeholder="Re-enter your Password" required>
+            <button type="submit" class="signin-btn">Sign up</button>
+          </form>
+        </div>
+        </div>
+      </div>
+
+    <script src="js\header.js"></script>
+    <script src="js\index.js"></script>
+
 </body>
 
 </html>

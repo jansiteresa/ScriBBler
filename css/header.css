@@ -38,4 +38,19 @@
     padding-left: 19px;
     margin-left: 10px;
     border: whitesmoke;
+    cursor: pointer;
   }
+  
+  .signup{
+    color: blue;
+    font-weight: bolder;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .signin-btn {
+    background-color: green;
+    padding: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
