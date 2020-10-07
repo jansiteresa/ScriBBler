@@ -1,17 +1,32 @@
-function showSignInModal(){
-    var modal = document.getElementById("signInModal");
-    modal.style.display = "flex";
+function showCreatePost(){
+  document.getElementById("createPostModal").style.display = "flex";
+  }
+  
+  function hideCreatePostModal(){
+    document.getElementById("createPostModal").style.display = "none";
+  }
+  
+  function navigateToBlogList(){
+    window.location.href = "/html/postslist.html"
   }
 
-  function hideSignInModal(){
-    var modal = document.getElementById("signInModal");
-    modal.style.display = "none";
-  }
-  function showSignUpModal(){
-    var modal = document.getElementById("signUpModal");
-    modal.style.display = "flex";
-  }
-  function hideSignUpModal(){
-    var modal = document.getElementById("signUpModal");
-    modal.style.display = "none";
-  }
+  // var createPostModal =  document.getElementById("createPostModal");
+  // var createPostBtn = document.getElementByclass[1]("postBtn");
+  // var createPostSpan = document.getElementById("close");
+
+  // createPostBtn.onclick = function() {
+  //   createPostModal.style.display ="block";
+  // }
+  // createPostSpan.onclick = function() {
+  //   createPostModal.style.display ="none";
+  // }
+
+  // window.onclick = function(event) {
+  //   if (event.target == createPostModal) {
+  //     createPostModal.style.display = "none";
+  //   }
+  
+  //   if (event.target == createPostModal) {
+  //     createPostModal.style.display = "none";
+  //   }
+  // }

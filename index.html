@@ -2,10 +2,9 @@
 <html>
 
 <head>
-    <title>ScriBBler</title>
     <!-- TODO: Include Font Awesome file here -->
     <!-- TODO: Include Google Fonts file here -->
-    <link rel='stylesheet' type='text/css' href='css\header.css'>
+    <link rel='stylesheet' type='text/css' href='css\common.css'>
     <link rel='stylesheet' type='text/css' href='css\index.css'>
     <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
@@ -14,56 +13,31 @@
 
 <body>
     <!-- TODO: Include all your code for the header and home page here -->
-    <div id="container">
-        <div class="header">
+    
+       <div >
             <div class="tileContainer">
                 <p class="title">ScriBBler</p>
                 <p class="subtitle">Explore, Imagine, Create</p>
+            </div>  
+            <div class="buttonContainer">
+              <button class="button"  id="SignUpBtn">Sign Up</button> &nbsp
+              <button class="button" id="SignInBtn">Sign In</button>
             </div>
-            <div class="buttonsContainer">
-                <button id="button"  onclick="showSignUpModal()" type="button">Sign Up</button>
-                <button id="button" onclick="showSignInModal()" type="button">Sign In</button>
-            </div>
-        </div>
-        <div class="PostButtons">
-            <button id="postBtn">All Posts</button>
-            <button id="postBtn">Create Post</button>
+        
+        <div class="postButtons">
+            <button onclick="navigateToBlogList()" id="postBtn">All Posts</button>
+            <button onclick="showCreatePost()" id="postBtn">Create Post</button>
         </div>
     </div>
 
-    <div>
-        <div class="modal" id="signInModal">
-          <div class="modalContent">
-  
-          <div class="modalHead">
-            <span onclick="hideSignInModal()" id="close" class="close" <i class="fa fa-times" aria-hidden="true"></i>
-                >&times;</span>
-            <h2 class="modalTitle">Welcome Back!</h2>
-          </div>
-          <hr>
-          <form>
-            <label for="username" class="labelText">Username</label>
-            <input type="text" class="username" placeholder="Enter your Username" required>
-            <label for="password" class="labelText">Password</label>
-            <input type="password" class="password" placeholder="Enter your Password" required>
-            <button type="submit" class="signin-btn">Sign In</button>
-          </form>
-  
-          <p class= footer>Not a member?<span onclick="hideSignInModal();showSignUpModal()" class=signup>Sign Up</span></p>
-        </div>
-        </div>
-      </div>
-
-      <div>
-        <div class="modal" id="signUpModal">
-          <div class="modalContent">
-  
-          <div class="modalHead">
-            <span onclick="hideSignUpModal()" id="close" class="close">&times;</span>
+    <div id="SignUpModel" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="SignUpSpan" class="close"><i class="fa fa-times" aria-hidden="true"></i>&times;</span>
             <h2 class="modal-title">Get Started</h2>
           </div>
           <hr>
-          <form>
+          <form  class="form-container">
             <label for="name" class="labelText">Name</label>
             <input type="text" id="name" placeholder="Enter your Name" required>
             <label for="username" class="labelText">Username</label>
@@ -74,13 +48,46 @@
             <input type="password" id="confirmPassword" placeholder="Re-enter your Password" required>
             <button type="submit" class="signin-btn">Sign up</button>
           </form>
-        </div>
-        </div>
+      </div>
+   
+
+    <div id="SignInModel" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="SignInSpan" class="close">&times;</span>
+            <h2 class="modalTitle">Welcome Back!</h2>
+          </div>
+
+          <form  class="form-container">
+            <label for="username" class="labelText">Username</label>
+            <input type="text" class="username" placeholder="Enter your Username" required>
+            <label for="password" class="labelText">Password</label>
+            <input type="password" class="password" placeholder="Enter your Password" required>
+            <button type="submit" class="signin-btn">Sign In</button>
+          </form>
+    
+          <p class= footer>Not a member?<span onclick="hideSignInModal();showSignUpModal()" class=signup>Sign Up</span></p>
+
+    
+      </div>
+    </div>
+    <div class="modal" id="createPostModal" >
+      <div class="modal-contentt">
+      <div class="modalHead">
+        <span onclick="hideCreatePostModal()" id="close" class="close"> <i class="fa fa-times" aria-hidden="true"></i>&times;</span>
+        <h2 class="modalTitle">Pen your post</h2>
+      </div>
+      <form id=create-post-form class="form-container">
+        <label for="tile" class="labelText">Title</label>
+        <input type="text" id="title" placeholder="Enter title of your post" required>
+        <label for="content" class="labelText">Contents</label>
+        <textarea cols="50" rows="22" name="post-details" form="createPostForm" placeholder="Enter the contents of your post"></textarea>
+        <button type="submit" onclick="createPost()" class="createBtn">Create</button>
+      </form>
+      </div>
       </div>
 
-    <script src="js\header.js"></script>
-    <script src="js\index.js"></script>
-
 </body>
-
 </html>
+<script src="js\index.js"></script>
+<script src="js\common.js"></script>
