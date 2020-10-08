@@ -4,6 +4,7 @@
 <head>
     <!-- TODO: Include Font Awesome file here -->
     <!-- TODO: Include Google Fonts file here -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='stylesheet' type='text/css' href='css\common.css'>
     <link rel='stylesheet' type='text/css' href='css\index.css'>
     <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
@@ -25,8 +26,8 @@
             </div>
         
         <div class="postButtons">
-            <button onclick="navigateToBlogList()" id="postBtn">All Posts</button>
-            <button onclick="showCreatePost()" id="postBtn">Create Post</button>
+            <button onclick="navigateToBlogList()" class="postBtn">All Posts</button>
+            <button onclick="showCreatePost()" class="postBtn">Create Post</button>
         </div>
     </div>
 
@@ -36,7 +37,6 @@
         <span id="SignUpSpan" class="close"><i class="fa fa-times" aria-hidden="true"></i>&times;</span>
             <h2 class="modal-title">Get Started</h2>
           </div>
-          <hr>
           <form  class="form-container">
             <label for="name" class="labelText">Name</label>
             <input type="text" id="name" placeholder="Enter your Name" required>
@@ -49,6 +49,7 @@
             <button type="submit" class="signin-btn">Sign up</button>
           </form>
       </div>
+    
    
 
     <div id="SignInModel" class="modal">
@@ -70,14 +71,12 @@
 
     
       </div>
-    </div>
+  
     <div class="modal" id="createPostModal" >
       <div class="modal-contentt">
-      <div class="modalHead">
         <span onclick="hideCreatePostModal()" id="close" class="close"> <i class="fa fa-times" aria-hidden="true"></i>&times;</span>
         <h2 class="modalTitle">Pen your post</h2>
-      </div>
-      <form id=create-post-form class="form-container">
+      <form class="form-container">
         <label for="tile" class="labelText">Title</label>
         <input type="text" id="title" placeholder="Enter title of your post" required>
         <label for="content" class="labelText">Contents</label>

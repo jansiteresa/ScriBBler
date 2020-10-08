@@ -11,7 +11,7 @@ function showCreatePost(){
   }
 
   // var createPostModal =  document.getElementById("createPostModal");
-  // var createPostBtn = document.getElementByclass[1]("postBtn");
+  // var createPostBtn = document.getElementByclass[1]("CreatePostBtn");
   // var createPostSpan = document.getElementById("close");
 
   // createPostBtn.onclick = function() {
@@ -22,10 +22,6 @@ function showCreatePost(){
   // }
 
   // window.onclick = function(event) {
-  //   if (event.target == createPostModal) {
-  //     createPostModal.style.display = "none";
-  //   }
-  
   //   if (event.target == createPostModal) {
   //     createPostModal.style.display = "none";
   //   }

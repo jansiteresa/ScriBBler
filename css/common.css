@@ -1,10 +1,10 @@
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 10px;
-  }
-  .tileContainer {
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+ 
+ .tileContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -22,14 +22,15 @@
     color: rgb(15, 15, 15);
     margin: 0;
   }
-  #button {
+  .button {
     background-color: #2519ff;
     color: white;
+    margin: 10px;
     padding: 10px 10px;
     border: 0;
     cursor: pointer;
   }
-  #postBtn {
+  .postBtn {
     background-color: #cfb53b;
     color: black;
     padding-top: 10px;
@@ -57,11 +58,6 @@
     margin: 10px 0;
   }
 
-  * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
 #container {
     display: flex;
     flex-direction: column;
@@ -84,11 +80,6 @@
   align-items: flex-end;    
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
-
 .close {
   display: flex;
   align-self: flex-end;
@@ -102,17 +93,10 @@ label{
   padding:2%
 }
 
-.form-popup {
-  display: flex;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-}
-
 .form-container {
-  border-top: 1px solid black;
+  display:flex;
+  flex-direction: column;
+  border-top: 1px solid;
   width: 30%;
   position: relative;
   left: 50%;
@@ -133,6 +117,7 @@ textarea{
   background-color: #f1f1f1;
   font-family: 'Times New Roman', Times, serif;
   font-size: 15px;
+  padding: 10px;
 }
 .createBtn{
 background-color: #0ec038;

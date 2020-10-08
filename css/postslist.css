@@ -1,3 +1,40 @@
 body{
     background-color: #ffeedd;
 }
+.post {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 600px;
+    height: 100px;
+    border-radius: 10px;
+    
+}
+
+.postUserName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 1%;
+    color: #707070;
+    background-color: #ffffff;
+    padding: 50px 20px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+ .allPostsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.postContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1%;
+    background-color: #e8e8e8;
+}
