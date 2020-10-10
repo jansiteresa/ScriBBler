@@ -59,11 +59,12 @@
     border: none;
     color: white;
     cursor: pointer;
-    margin: 10px 0;
-  }
+    margin: 10px 15px;
+   }
   .footer{
     display: flex;
     justify-content: center;
+    margin: 10px;
   }
 
 #container {
@@ -99,6 +100,8 @@ input {
 }
 label{
   padding:2%
+  padding: 2%;
+  margin: 3px 15px;
 }
 
 .form-container {
@@ -120,23 +123,26 @@ input {
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
     padding: 10px;
+    border: 0;
+    margin: 3px 15px;
 }
 textarea{
   background-color: #f1f1f1;
   font-family: 'Times New Roman', Times, serif;
   font-size: 15px;
   padding: 10px;
+  margin: 3px 15px;
+  border: 0px;
+
 }
 .createBtn{
-background-color: #0ec038;
-color: white;
-text-align: center;
-position: relative;
-padding: 15px;
-top: 5px;
-left: 50%;
-transform: translate(-50%);
-cursor: pointer;
+  background-color: #0ec038;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  margin: 3px 400px;
+  border: 0px;
 }
 
 
@@ -180,4 +186,3 @@ cursor: pointer;
   cursor: pointer;
 }
 /* end model styling */
-.c

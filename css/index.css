@@ -21,7 +21,14 @@ body{
  .formCreate {
     display: flex;
     flex-direction: column;
-width: 100%;
+    width: 100%;
+ }
+ .modal-conte1nt-1{
+    width: 80%;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
  }
 
  

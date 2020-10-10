@@ -21,6 +21,7 @@ body{
     padding: 50px 20px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
+    font-size: 18px;
 }
 
  .allPostsContainer {
@@ -45,6 +46,7 @@ body{
 }
 .postHeading {
     font-size:18px;
+    color: #818181;
 }
 .postDescription {
     font-size: 15px;
@@ -54,8 +56,10 @@ body{
     display: flex;
     justify-content: flex-end;
     margin: 3px;
-    cursor: pointer;;
+    cursor: pointer;
+    color: #818181;
 }
 .postTrash{
     cursor: pointer;
+    color: #818181;
 }
