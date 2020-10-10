@@ -8,15 +8,14 @@ body{
     width: 600px;
     height: 100px;
     border-radius: 10px;
-    
+    margin: 2em;
+    box-shadow: 0px 6px 47px 10px #c9b5b8;
 }
 
 .postUserName {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
-    padding: 1%;
     color: #707070;
     background-color: #ffffff;
     padding: 50px 20px;
@@ -37,4 +36,26 @@ body{
     justify-content: space-between;
     padding: 1%;
     background-color: #e8e8e8;
+    height: 140px;
+}
+.postHeadingContainer {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.postHeading {
+    font-size:18px;
+}
+.postDescription {
+    font-size: 15px;
+  }
+
+.moreInfo {
+    display: flex;
+    justify-content: flex-end;
+    margin: 3px;
+    cursor: pointer;;
+}
+.postTrash{
+    cursor: pointer;
 }

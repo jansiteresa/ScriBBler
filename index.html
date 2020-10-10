@@ -2,91 +2,97 @@
 <html>
 
 <head>
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='stylesheet' type='text/css' href='css\common.css'>
-    <link rel='stylesheet' type='text/css' href='css\index.css'>
-    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+  <!-- TODO: Include Font Awesome file here -->
+  <!-- TODO: Include Google Fonts file here -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel='stylesheet' type='text/css' href='css\common.css'>
+  <link rel='stylesheet' type='text/css' href='css\index.css'>
+  <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <!-- TODO: Include all your code for the header and home page here -->
-    
-       <div >
-            <div class="tileContainer">
-                <p class="title">ScriBBler</p>
-                <p class="subtitle">Explore, Imagine, Create</p>
-            </div>  
-            <div class="buttonContainer">
-              <button class="button"  id="SignUpBtn">Sign Up</button> &nbsp
-              <button class="button" id="SignInBtn">Sign In</button>
-            </div>
-        
-        <div class="postButtons">
-            <button onclick="navigateToBlogList()" class="postBtn">All Posts</button>
-            <button onclick="showCreatePost()" class="postBtn">Create Post</button>
-        </div>
+  <!-- TODO: Include all your code for the header and home page here -->
+
+  <div>
+
+    <div class="header">
+      <div class="tileContainer">
+        <p class="title">ScriBBler</p>
+        <p class="subtitle">Explore, Imagine, Create</p>
+      </div>
+      <div class="buttonContainer">
+        <button class="button" id="SignUpBtn">Sign Up</button> &nbsp;
+        <button class="button" id="SignInBtn">Sign In</button>
+      </div>
+    </div>
+    <div class="postButtons">
+      <button onclick="navigateToBlogList()" class="postBtn">All Posts</button>
+      <button onclick="showCreatePost()" class="postBtn">Create Post</button>
+    </div>
+  </div>
+
+  <div id="SignUpModel" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content" class="modal-content">
+      <span id="SignUpSpan" class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+      <h2 class="modal-title">Get Started</h2>
+    </div>
+    <form class="form-container">
+      <label for="name" class="labelText">Name</label>
+      <input type="text" id="name" placeholder="Enter your Name" required>
+      <label for="username" class="labelText">Username</label>
+      <input type="text" class="username" placeholder="Enter your Username" required>
+      <label for="password" class="labelText">Password</label>
+      <input type="password" class="password" placeholder="Enter your Password" required>
+      <label for="confirmpassword" class="labelText"> Confirm Password</label>
+      <input type="password" id="confirmPassword" placeholder="Re-enter your Password" required>
+      <button type="submit" class="signin-btn">Sign up</button>
+    </form>
+  </div>
+
+
+
+  <div id="SignInModel" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span id="SignInSpan" class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+      <h2 class="modalTitle">Welcome Back!</h2>
     </div>
 
-    <div id="SignUpModel" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span id="SignUpSpan" class="close"><i class="fa fa-times" aria-hidden="true"></i>&times;</span>
-            <h2 class="modal-title">Get Started</h2>
-          </div>
-          <form  class="form-container">
-            <label for="name" class="labelText">Name</label>
-            <input type="text" id="name" placeholder="Enter your Name" required>
-            <label for="username" class="labelText">Username</label>
-            <input type="text" class="username" placeholder="Enter your Username" required>
-            <label for="password" class="labelText">Password</label>
-            <input type="password" class="password" placeholder="Enter your Password" required>
-            <label for="confirmpassword" class="labelText"> Confirm Password</label>
-            <input type="password" id="confirmPassword" placeholder="Re-enter your Password" required>
-            <button type="submit" class="signin-btn">Sign up</button>
-          </form>
-      </div>
-    
-   
+    <form class="form-container">
+      <label for="username" class="labelText">Username</label>
+      <input type="text" class="username" placeholder="Enter your Username" required>
+      <label for="password" class="labelText">Password</label>
+      <input type="password" class="password" placeholder="Enter your Password" required>
+      <button type="submit" class="signin-btn">Sign In</button>
+      <p class=footer>Not a member?<span onclick="hideSignInModal();showSignUpModal()" class=signup>Sign Up</span></p>
 
-    <div id="SignInModel" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span id="SignInSpan" class="close">&times;</span>
-            <h2 class="modalTitle">Welcome Back!</h2>
-          </div>
+    </form>
+  </div>
 
-          <form  class="form-container">
-            <label for="username" class="labelText">Username</label>
-            <input type="text" class="username" placeholder="Enter your Username" required>
-            <label for="password" class="labelText">Password</label>
-            <input type="password" class="password" placeholder="Enter your Password" required>
-            <button type="submit" class="signin-btn">Sign In</button>
-          </form>
-    
-          <p class= footer>Not a member?<span onclick="hideSignInModal();showSignUpModal()" class=signup>Sign Up</span></p>
-
-    
-      </div>
-  
-    <div class="modal" id="createPostModal" >
-      <div class="modal-contentt">
-        <span onclick="hideCreatePostModal()" id="close" class="close"> <i class="fa fa-times" aria-hidden="true"></i>&times;</span>
-        <h2 class="modalTitle">Pen your post</h2>
-      <form class="form-container">
+  <div class="modal" id="createPostModal">
+    <div class="modal-content">
+      <span onclick="hideCreatePostModal()" id="close" class="close"> <i class="fa fa-times"
+          aria-hidden="true"></i></span>
+      <h2 class="modalTitle">Pen your post</h2>
+      <form class="formCreate">
         <label for="tile" class="labelText">Title</label>
         <input type="text" id="title" placeholder="Enter title of your post" required>
         <label for="content" class="labelText">Contents</label>
-        <textarea cols="50" rows="22" name="post-details" form="createPostForm" placeholder="Enter the contents of your post"></textarea>
+        <textarea cols="50" rows="22" name="post-details" form="createPostForm"
+          placeholder="Enter the contents of your post"></textarea>
         <button type="submit" onclick="createPost()" class="createBtn">Create</button>
       </form>
-      </div>
-      </div>
+    </div>
+  </div>
 
 </body>
+
 </html>
 <script src="js\index.js"></script>
 <script src="js\common.js"></script>
