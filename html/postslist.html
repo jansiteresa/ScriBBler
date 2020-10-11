@@ -64,7 +64,8 @@
             <label for="password" class="labelText">Password</label>
             <input type="password" class="password" placeholder="Enter your Password" required>
             <button type="submit" class="signin-btn">Sign In</button>
-            <p class=footer>Not a member?<span onclick="hideSignInModal();showSignUpModal()" class=signup>Sign Up</span>
+            <p class=footer>Not a member?<span id="C-SignUpBtn" class=signup>Sign Up</span></p>
+
             </p>
 
         </form>
@@ -82,7 +83,7 @@
             <div class="postContent">
                 <div class="postHeadingContainer">
                     <p class="postHeading">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
-                <span id="del1" class="postTrash">
+                <span id="del1" class="postTrash" onclick="javascript:deleteModel()">
                         <i class="fas fa-trash"></i>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                     </span>
@@ -107,7 +108,7 @@
             <div class="postContent">
                 <div class="postHeadingContainer">
                     <p class="postHeading">What is linting and how can it save you time?</p>
-                    <span class="postTrash" id="del2">
+                    <span class="postTrash" id="del2" onclick="javascript:deleteModel()">
                         <i class="fa fa-trash" aria-hidden="true"></i>
                     </span>
                 </div>
@@ -130,7 +131,7 @@
             <div class="postContent">
                 <div class="postHeadingContainer">
                     <p class="postHeading">How to Get More Views on Your Tech Blog</p>
-                    <span class="postTrash" id="del3">
+                    <span class="postTrash" id="del3" onclick="javascript:deleteModel()">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                         <i class="fa fa-trash" aria-hidden="true"></i>
                     </span>
@@ -155,7 +156,7 @@
             <div class="postContent">
                 <div class="postHeadingContainer">
                     <p class="postHeading">How to write easily describable code</p>
-                    <span class="postTrash" id="del4">
+                    <span class="postTrash" id="del4" onclick="javascript:deleteModel()">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                         <i class="fa fa-trash" aria-hidden="true"></i>
                     </span>
@@ -181,7 +182,7 @@
             <div class="postContent">
                 <div class="postHeadingContainer">
                     <p class="postHeading">Everything you should know about ‘module’ & ‘require’ in Node.js</p>
-                    <span class="postTrash" id="del5">
+                    <span class="postTrash" id="del5" onclick="javascript:deleteModel()">
                         <i class="fa fa-trash" aria-hidden="true"></i>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                     </span>
@@ -217,3 +218,4 @@
 <script src="\js\index.js"></script>
 <script src="\js\common.js"></script>
 <script src="..\js\post.js"></script>
+<script src="..\js\postlist.js"></script>

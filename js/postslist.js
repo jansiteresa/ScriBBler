@@ -1,14 +1,15 @@
+
+var model = document.getElementById("Delete-Model");
+
 function deleteModel() {
-    var model = document.getElementById("Delete-Model")
     model.style.display = "block";
+    }
 
     window.onclick = function (event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-
+      if (event.target == modal) {
+        modal.style.display = "none";
       }
-}
+    }
 
 // var del = document.getElementsByClassName("postTrash");
 // var i;
