@@ -115,13 +115,14 @@
         </section>
         <section class="commentSection">
             <form class="commentForm">
-                <textarea class="commentTextArea" rows="5" placeholder="Leave a comment..."></textarea>
-                <button class="commentBtn">Comment</button>
+                <textarea id="textArea" class="commentTextArea" rows="5" placeholder="Leave a comment..."></textarea>
+                <button class="commentBtn" onclick="AddComment()">Comment</button>
             </form>
             <h3>All comments</h3>
             <div class="allcommentsSection">
                 <div class="commentBox">
                     <p>Great post! Thanks!</p>
+                    <div id = "addedComments"></div>
                 </div>
             </div>
         </section>

@@ -16,3 +16,10 @@ function incLikes()
     ContentChange.innerHTML =`${likes} people like this!` ;
    }
 }
+
+function AddComment()
+{
+    document.getElementById("addedComments").style.display="block";
+	var text=document.getElementById("textArea").value;
+	document.getElementById("addedComments").innerHTML+=text;
+}
