@@ -3,38 +3,40 @@
   padding: 0px;
   box-sizing: border-box;
 }
-.header{
+.header {
     display: flex;
     justify-content: space-between;
 }
  
- .tileContainer {
+.tileContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
+}
 
-  .title{
+.title {
     font-family: 'Montez', cursive;
     font-size: 30px;
     color: blue;
     margin: 0;
-  }
-  .subtitle{
+}
+
+.subtitle{
     font-family: 'Ubuntu Mono';
     font-size: 10;
     color: rgb(15, 15, 15);
     margin: 0;
-  }
-  .button {
+}
+.button {
     background-color: #2519ff;
     color: white;
     margin: 10px;
     padding: 10px 10px;
     border: 0;
     cursor: pointer;
-  }
-  .postBtn {
+}
+  
+.postBtn {
     background-color: #cfb53b;
     color: black;
     padding-top: 10px;
@@ -44,28 +46,29 @@
     margin-left: 10px;
     border: whitesmoke;
     cursor: pointer;
-  }
+}
   
-  .signup{
+.signup {
     color: blue;
     font-weight: bolder;
     margin-left: 10px;
     cursor: pointer;
-  }
+}
 
-  .signin-btn {
+.signin-btn {
     background-color: green;
     padding: 10px;
     border: none;
     color: white;
     cursor: pointer;
     margin: 10px 15px;
-   }
-  .footer{
+}
+
+.footer{
     display: flex;
     justify-content: center;
     margin: 10px;
-  }
+}
 
 #container {
     display: flex;
@@ -74,6 +77,7 @@
     height: 100%;
     width: 100%;
 }
+
 .button {
     display:flex;
     background-color: #2519ff;
@@ -81,9 +85,9 @@
     padding: 10px 10px;
     border: 0;
     cursor: pointer;
-    
 }
-.buttonContainer{
+
+.buttonContainer {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;    
@@ -98,7 +102,8 @@ input {
   padding: 10px;
   outline: none;
 }
-label{
+
+label {
   padding:2%
   padding: 2%;
   margin: 3px 15px;

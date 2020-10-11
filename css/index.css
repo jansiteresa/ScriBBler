@@ -1,6 +1,4 @@
-
-
-.postButtons{
+.postButtons {
     display: flex;
     height: 100%;
     width: 100%;
@@ -9,26 +7,27 @@
     position: fixed;
 }
 
-body{
+body {
     background-image: url('../images/background.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
     width: 100%;
- }
+}
 
- .formCreate {
+.formCreate {
     display: flex;
     flex-direction: column;
     width: 100%;
- }
- .modal-conte1nt-1{
+}
+
+.modal-conte1nt-1 {
     width: 80%;
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
- }
+}
 
  

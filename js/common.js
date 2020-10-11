@@ -43,4 +43,8 @@ window.onclick = function(event) {
 
 // end model functionality
 
-
+var btn =document.getElementById("C-SignUpBtn");
+btn.onclick = function() {
+  signInModel.style.display = "none";
+  signUpModel.style.display = "block";
+}
