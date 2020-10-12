@@ -27,6 +27,7 @@
     color: rgb(15, 15, 15);
     margin: 0;
 }
+
 .button {
     background-color: #2519ff;
     color: white;
@@ -98,6 +99,7 @@
   align-self: flex-end;
   cursor: pointer;
 }
+
 input {
   padding: 10px;
   outline: none;
@@ -131,6 +133,7 @@ input {
     border: 0;
     margin: 3px 15px;
 }
+
 textarea{
   background-color: #f1f1f1;
   font-family: 'Times New Roman', Times, serif;
@@ -140,6 +143,7 @@ textarea{
   border: 0px;
 
 }
+
 .createBtn{
   background-color: #0ec038;
   color: white;
