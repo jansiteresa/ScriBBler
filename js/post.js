@@ -23,3 +23,17 @@ function AddComment()
 	var text=document.getElementById("textArea").value;
 	document.getElementById("addedComments").innerHTML+=text;
 }
+
+var toggle = true;
+var saveEditBtnElem = document.getElementById("editSave");
+
+function EditSaveClicked() {
+    if (toggle) {
+        saveEditBtnElem.innerHTML = `Save <i class="fa fa-floppy-o" aria-hidden="true"></i>`;
+        toggle = false;
+      } else {
+        saveEditBtnElem.innerHTML = `Edit <i class="fa fa-pencil-square-o" aria-hidden="true"></i>`;
+        toggle = true;
+      }
+
+}

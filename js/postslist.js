@@ -1,24 +1,48 @@
-
-  var model = document.getElementById("DeleteModel");
-  var postElem = document.getElementsByClassName("post");
-
-  function deleteModel(postId) {
-
-    postElem[postId].style.display = 'none'
-
-    // deleteBtn.onclick = function() {
-    //   model.style.display = "block";
-    // }
-
-    // console.log(postId)
-    // deletePost.onclick = function() {
-    //   postElem[postId].style.display = 'none'
-    // }
+  function deleteModel5() {
+    document.getElementById("delModel5").style.display = "block";
   }
 
-  // function closeModel() {
-  //   model.style.display = "none";
-  // }
+  function closeModel5() {
+    document.getElementById("delModel5").style.display = "none";
+    document.getElementById("post5").style.display="none";   
+  }
+
+  function deleteModel4() {
+    document.getElementById("delModel4").style.display = "block";
+  }
+  
+  function closeModel4() {
+    document.getElementById("delModel4").style.display = "none";
+    document.getElementById("post4").style.display="none";   
+  }
+
+  function deleteModel3() {
+    document.getElementById("delModel3").style.display = "block";
+  }
+  
+  function closeModel3() {
+    document.getElementById("delModel3").style.display = "none";
+    document.getElementById("post3").style.display="none";   
+  }
+    
+  function deleteModel2() {
+    document.getElementById("delModel2").style.display = "block";
+  }
+  
+  function closeModel2() {
+    document.getElementById("delModel2").style.display = "none";
+    document.getElementById("post2").style.display="none";   
+  }
+  
+  
+  function deleteModel1() {
+    document.getElementById("delModel1").style.display = "block";
+  }
+  
+  function closeModel1() {
+    document.getElementById("delModel1").style.display = "none";
+    document.getElementById("post1").style.display="none";   
+  }
 
  
 

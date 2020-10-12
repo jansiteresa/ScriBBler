@@ -75,7 +75,7 @@
     <!-- list of all posts starts here -->
     <div class="allPostsContainer">
         <!-- post 1 starts here -->
-        <div class="post">
+        <div class="post" id="post1">
             <div>
                 <p class="postUserName">Srishti Gupta</p>
             </div>
@@ -83,7 +83,7 @@
             <div class="postContent">
                 <div class="postHeadingContainer">
                     <p class="postHeading">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
-                <span id="deleteBtn" class="postTrash" onclick="deleteModel(0)">
+                <span id="deleteBtn" class="postTrash" onclick="deleteModel1()">
                         <i class="fas fa-trash"></i>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                     </span>
@@ -96,11 +96,24 @@
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
                 </span>
             </div>
+
+            <div id="delModel1" class="modal">
+                <div class="modal-content">
+                    <h1 class="modal-title">
+                        Are you sure you want to delete this post?
+                    </h1>
+                    <div class="YesNoBtnCont">
+                        <button onclick="closeModel1()" class="deletePost">Yes</button>
+                        <button class="deleteNo">No</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <!-- post 1 ends here -->
 
         <!-- post 2 starts here -->
-        <div class="post">
+        <div class="post" id="post2">
             <div>
                 <p class="postUserName">Colby Fayock</p>
             </div>
@@ -108,7 +121,7 @@
             <div class="postContent">
                 <div class="postHeadingContainer">
                     <p class="postHeading">What is linting and how can it save you time?</p>
-                    <span class="postTrash" id="deleteBtn" onclick="deleteModel(1)">
+                    <span class="postTrash" id="deleteBtn" onclick="deleteModel2()">
                         <i class="fa fa-trash" aria-hidden="true"></i>
                     </span>
                 </div>
@@ -119,11 +132,24 @@
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
                 </span>
             </div>
+
+            <div id="delModel2" class="modal">
+                <div class="modal-content">
+                    <h1 class="modal-title">
+                        Are you sure you want to delete this post?
+                    </h1>
+                    <div class="YesNoBtnCont">
+                        <button onclick="closeModel2()" class="deletePost">Yes</button>
+                        <button class="deleteNo">No</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <!-- post 2 ends here -->
 
         <!-- post 3 starts here -->
-        <div class="post">
+        <div class="post" id="post3">
             <div>
                 <p class="postUserName">Yazeed Bzadough</p>
             </div>
@@ -131,7 +157,7 @@
             <div class="postContent">
                 <div class="postHeadingContainer">
                     <p class="postHeading">How to Get More Views on Your Tech Blog</p>
-                    <span class="postTrash" id="deleteBtn" onclick="deleteModel(2)">
+                    <span class="postTrash" id="deleteBtn" onclick="deleteModel3()">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                         <i class="fa fa-trash" aria-hidden="true"></i>
                     </span>
@@ -144,11 +170,24 @@
                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                 </span>
             </div>
+
+            <div id="delModel3" class="modal">
+                <div class="modal-content">
+                    <h1 class="modal-title">
+                        Are you sure you want to delete this post?
+                    </h1>
+                    <div class="YesNoBtnCont">
+                        <button onclick="closeModel3()" class="deletePost">Yes</button>
+                        <button class="deleteNo">No</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <!-- post 3 ends here -->
 
         <!-- post 4 starts here -->
-        <div class="post">
+        <div class="post" id="post4">
             <div>
                 <p class="postUserName">Cedd Burge</p>
             </div>
@@ -156,7 +195,7 @@
             <div class="postContent">
                 <div class="postHeadingContainer">
                     <p class="postHeading">How to write easily describable code</p>
-                    <span class="postTrash" id="deleteBtn" onclick="deleteModel(3)">
+                    <span class="postTrash" id="deleteBtn" onclick="deleteModel4()">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                         <i class="fa fa-trash" aria-hidden="true"></i>
                     </span>
@@ -170,11 +209,24 @@
                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                 </span>
             </div>
+
+            <div id="delModel4" class="modal">
+                <div class="modal-content">
+                    <h1 class="modal-title">
+                        Are you sure you want to delete this post?
+                    </h1>
+                    <div class="YesNoBtnCont">
+                        <button onclick="closeModel4()" class="deletePost">Yes</button>
+                        <button class="deleteNo">No</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <!-- post 4 ends here -->
 
         <!-- post 5 starts here -->
-        <div class="post">
+        <div class="post" id="post5">
             <div>
                 <p class="postUserName">Srishti Gupta</p>
             </div>
@@ -182,7 +234,7 @@
             <div class="postContent">
                 <div class="postHeadingContainer">
                     <p class="postHeading">Everything you should know about ‘module’ & ‘require’ in Node.js</p>
-                    <span class="postTrash" id="deleteBtn" onclick="deleteModel(4)">
+                    <span class="postTrash" id="deleteBtn" onclick="deleteModel5()">
                         <i class="fa fa-trash" aria-hidden="true"></i>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                     </span>
@@ -196,21 +248,24 @@
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
                 </span>
             </div>
+
+            <div id="delModel5" class="modal">
+                <div class="modal-content">
+                    <h1 class="modal-title">
+                        Are you sure you want to delete this post?
+                    </h1>
+                    <div class="YesNoBtnCont">
+                        <button onclick="closeModel5()" class="deletePost">Yes</button>
+                        <button class="deleteNo">No</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <!-- post 5 ends here -->
 
         <!-- TODO: Write code for delete post modal here -->
-        <div id="DeleteModel" class="modal">
-            <div class="modal-content">
-                <h1 class="modal-title">
-                    Are you sure you want to delete this post?
-                </h1>
-                <div>
-                    <button onclick="closeModel()" id="deletePost">Yes</button>
-                    <button>No</button>
-                </div>
-            </div>
-        </div>
+        
         <!-- list of all posts ends here -->
 </body>
 
